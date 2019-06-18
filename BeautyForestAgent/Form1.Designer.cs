@@ -69,12 +69,14 @@
             this.btnTray.TabIndex = 2;
             this.btnTray.Text = "▼";
             this.btnTray.UseVisualStyleBackColor = true;
+            this.btnTray.Click += new System.EventHandler(this.btnTray_Click);
             // 
             // ntiTray
             // 
             this.ntiTray.ContextMenuStrip = this.cmsMenu;
             this.ntiTray.Icon = ((System.Drawing.Icon)(resources.GetObject("ntiTray.Icon")));
             this.ntiTray.Text = "Beauty Forest Agent v0.1";
+            this.ntiTray.DoubleClick += new System.EventHandler(this.ntiTray_DoubleClick);
             // 
             // cmsMenu
             // 
@@ -89,12 +91,14 @@
             this.호ToolStripMenuItem.Name = "호ToolStripMenuItem";
             this.호ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.호ToolStripMenuItem.Text = "폼 보이기";
+            this.호ToolStripMenuItem.Click += new System.EventHandler(this.호ToolStripMenuItem_Click);
             // 
             // 종료ToolStripMenuItem
             // 
             this.종료ToolStripMenuItem.Name = "종료ToolStripMenuItem";
             this.종료ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.종료ToolStripMenuItem.Text = "종료";
+            this.종료ToolStripMenuItem.Click += new System.EventHandler(this.종료ToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -111,6 +115,7 @@
             this.MinimizeBox = false;
             this.Name = "Form1";
             this.Text = "Beauty Forest Agent v0.1 by [3203] [김나연]";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.cmsMenu.ResumeLayout(false);
             this.ResumeLayout(false);
